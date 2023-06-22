@@ -2701,6 +2701,7 @@ input, select, textarea {
 	}
 
 		ul li {
+			text-align: left;
 			padding-left: 0.5rem;
 		}
 
