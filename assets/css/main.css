@@ -7,6 +7,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+	height: 0;
+}
+
+.container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -28,7 +43,6 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-
 
 body {
 	line-height: 1;
@@ -75,7 +89,6 @@ input, select, textarea {
 
 /* Basic */
 
-
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -114,12 +127,6 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
-	.flex-centered{
-		display: flex;
-    	justify-content: center;
-	}
-
 
 /* Type */
 
@@ -2707,7 +2714,6 @@ input, select, textarea {
 	}
 
 		ul li {
-			text-align: left;
 			padding-left: 0.5rem;
 		}
 
@@ -3497,7 +3503,6 @@ input, select, textarea {
 			flex-shrink: 0;
 			border-radius: 0;
 			width: 50%;
-			opacity: 0.5;
 		}
 
 			.banner.style1 .image img {
@@ -3952,7 +3957,6 @@ input, select, textarea {
 		.banner.style3.fullscreen {
 			min-height: 100vh;
 		}
-
 
 		.banner.style3.orient-left {
 			-moz-flex-direction: row;
@@ -8612,5 +8616,3 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
-
-		
